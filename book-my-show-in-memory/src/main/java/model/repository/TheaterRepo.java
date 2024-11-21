@@ -1,26 +1,14 @@
 package model.repository;
 
-public class TheaterRepo implements IDatabaseRepository {
+import model.Theater;
 
+import java.util.List;
+import java.util.Map;
 
-
-    @Override
-    public void save( Object entity ) {
-
-    }
+public class TheaterRepo extends BaseRepository<Theater, Integer> {
 
     @Override
-    public Object update( Object entity ) {
-        return null;
-    }
-
-    @Override
-    public Object findById() {
-        return null;
-    }
-
-    @Override
-    public boolean delete( Object entity ) {
-        return false;
+    Integer getId(Theater entity) {
+        return entity.getId();
     }
 }
