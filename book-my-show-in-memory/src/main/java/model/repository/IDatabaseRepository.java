@@ -5,6 +5,7 @@ import java.util.function.Predicate;
 
 public interface IDatabaseRepository<T,ID> {
     public void save( T entity);
+    public void  saveBulk( List<T> entities);
     public T update( T entity);
     public T findById( ID id);
     public boolean delete( T entity);

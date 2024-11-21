@@ -21,6 +21,13 @@ public abstract class BaseRepository<T, ID> implements IDatabaseRepository<T, ID
     }
 
     @Override
+    public void saveBulk(List<T> entities) {
+        for( T t : entities ){
+            save( t );
+        }
+    }
+
+    @Override
     public T update(T entity) {
         save( entity );
         return entity;

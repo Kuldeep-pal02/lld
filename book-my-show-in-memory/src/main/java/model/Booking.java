@@ -6,7 +6,7 @@ import java.util.List;
 
 @Data
 public class Booking {
-    int id;
+    long id;
     int userId;
     int showId;
     List<Seat> seatList;

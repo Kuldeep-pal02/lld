@@ -8,7 +8,7 @@ public class Seat {
     int showId;
     SeatType seatType;
     User heldByUser;
-    int holdExpiryTime;
+    long holdExpiryTime;
     User bookedByUser;
 
 }
