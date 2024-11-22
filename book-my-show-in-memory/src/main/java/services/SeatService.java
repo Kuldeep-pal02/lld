@@ -3,6 +3,8 @@ package services;
 import model.Seat;
 import model.User;
 import model.repository.IDatabaseRepository;
+import services.lockmanager.ISeatLockManager;
+import services.lockmanager.SeatLockManagerFactory;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -13,11 +15,11 @@ public class SeatService {
     private final IDatabaseRepository<Seat, Integer> seatRepo;
 
     private final UserService userService;
-    private final SeatLockManager seatLockManager;
-    public SeatService( IDatabaseRepository<Seat,Integer> seatRepo, UserService userService, SeatLockManager seatLockManager ) {
+    private final ISeatLockManager seatLockManager;
+    public SeatService( IDatabaseRepository<Seat,Integer> seatRepo, UserService userService ) {
         this.seatRepo = seatRepo;
         this.userService = userService;
-        this.seatLockManager = seatLockManager;
+        this.seatLockManager = SeatLockManagerFactory.getLockManager();
     }
 
     public List<Seat> findAllSeats( int showId){

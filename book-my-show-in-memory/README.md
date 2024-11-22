@@ -113,5 +113,5 @@ Creational patterns -
 
 
 Custom Patterns
-1) Lock Manager - to prevent raceCondition 
+1) Lock Manager - to prevent raceCondition - For distributed services we use Distributed Lock Manager
 
