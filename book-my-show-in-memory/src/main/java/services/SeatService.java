@@ -48,6 +48,8 @@ public class SeatService {
             seatRepo.saveBulk(  seats );
         }catch ( Exception e ){
             seatLockManager.revertLockBulkSeats( seatIds, userId  );
+        }finally {
+
         }
 
 

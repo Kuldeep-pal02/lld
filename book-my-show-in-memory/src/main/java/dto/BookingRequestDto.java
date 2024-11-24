@@ -10,8 +10,7 @@ import static model.BookingStatus.IN_PROGRESS;
 
 @Data
 public class BookingRequestDto {
-    private int userId;
-    private int booking;
+    private int userId;;
     private int showId;
     private List<Seat> seatList;
     private int bookingId;
