@@ -44,9 +44,6 @@ public class Singleton {
      */
     //URL -- https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples#7-enum-singleton
 
-
-
-
     //BillPugh Singleton Implementation using inner static class
     /*
         Notice the private inner static class that contains the instance of the singleton class. When the singleton class is loaded,
