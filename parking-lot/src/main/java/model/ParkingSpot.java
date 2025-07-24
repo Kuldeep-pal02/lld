@@ -1,10 +1,8 @@
 package model;
 
 public class ParkingSpot {
-    SpotType type;
-    SpotStatus status;
-    IVehicle parkedVehicle;
-    public void freeTheSpot(){
+    public SpotType type;
+    public SpotStatus status;
+    public IVehicle parkedVehicle;
 
-    }
 }

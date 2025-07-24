@@ -4,5 +4,5 @@ import java.util.List;
 
 public class Floor {
 
-    List<ParkingSpot> parkingSpotList ;
+    public List<ParkingSpot> parkingSpotList ;
 }
