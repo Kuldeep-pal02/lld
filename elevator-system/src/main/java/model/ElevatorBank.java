@@ -1,10 +1,9 @@
 package model;
 
-import service.Scheduler;
+import service.SchedulerStrategy;
 
 import java.util.List;
 
 public class ElevatorBank {
-    List<Elevator> elevatorList;
-    Scheduler scheduler;
+    public List<Elevator> elevatorList;
 }
